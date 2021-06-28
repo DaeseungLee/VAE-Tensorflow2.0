@@ -9,9 +9,10 @@ img_dim=784
 intermediate_dim=64
 latent_dim=16
 epochs=40
+val_ratio=0.3
 
 def data_preprocessing():
-    x_train, y_train, x_val, y_val, x_test, y_test = load_mnist()
+    x_train, y_train, x_val, y_val, x_test, y_test = load_mnist(val_ratio)
 
     x_train = (x_train / 255.0).reshape(-1, img_dim)
     x_val = (x_val / 255.0).reshape(-1, img_dim)
