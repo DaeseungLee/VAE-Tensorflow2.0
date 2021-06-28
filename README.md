@@ -11,23 +11,18 @@
     model             # VAE model class
 
 ## Result
-- 이미지가 선명하게 나오지는 않았다. 
-![image](https://user-images.githubusercontent.com/83156421/123632909-757ddc80-d853-11eb-806f-69d383eb5da5.png)
-
-
+- reconstructed 이미지가 선명하지는 않지만 Latent vector가 커질수록 원본 이미지에 가까워진다.  
 <table align='center'>
 <tr align='center'>
 <td> Input image </td>
 <td> 2-D latent space </td>
-<td> 5-D latent space </td>
-<td> 10-D latent space </td>
-<td> 20-D latent space </td>
+<td> 16-D latent space </td>
+<td> 24-D latent space </td>
 </tr>
 <tr>
-<td><img src = 'results/input.jpg' height = '150px'>
-<td><img src = 'results/dim_z_2.jpg' height = '150px'>
-<td><img src = 'results/dim_z_5.jpg' height = '150px'>
-<td><img src = 'results/dim_z_10.jpg' height = '150px'>
-<td><img src = 'results/dim_z_20.jpg' height = '150px'>
+<td><img src = 'result/original_image.png' height = '200px'>
+<td><img src = 'result/reconstructed_image_2.png' height = '200px'>
+<td><img src = 'result/reconstructed_image_16.png' height = '200px'>
+<td><img src = 'result/reconstructed_image_24.png' height = '200px'>
 </tr>
 </table>
