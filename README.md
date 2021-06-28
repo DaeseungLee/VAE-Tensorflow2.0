@@ -20,9 +20,9 @@
 <td> 24-D latent space </td>
 </tr>
 <tr>
-<td><img src = 'result/original_image.png' height = '300px'>
-<td><img src = 'result/reconstructed_image_2.png' height = '300px'>
-<td><img src = 'result/reconstructed_image_16.png' height = '300px'>
-<td><img src = 'result/reconstructed_image_24.png' height = '300px'>
+<td><img src = 'result/original_image.png' height = '250px'>
+<td><img src = 'result/reconstructed_image_2.png' height = '250px'>
+<td><img src = 'result/reconstructed_image_16.png' height = '250px'>
+<td><img src = 'result/reconstructed_image_24.png' height = '250px'>
 </tr>
 </table>
