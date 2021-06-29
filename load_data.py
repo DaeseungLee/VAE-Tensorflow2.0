@@ -31,3 +31,14 @@ def imshow_mnist(x_train, n=10):
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
 
+def imshow_canvas(reconstructed, n):
+  canvas = np.empty((28*n, 28*n))
+
+  for i in range(20):
+    for j in range(20):
+      canvas[(n-i-1)*28:(n-i)*28, j*28:(j+1)*28] = reconstructed[i*20 + j].reshape(28, 28)
+
+  plt.figure(figsize=(10, 10))
+  plt.title("Manifold")
+  plt.imshow(canvas, origin="upper", cmap="gray")
+  plt.tight_layout()
